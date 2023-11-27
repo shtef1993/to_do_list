@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  background-color: aqua;
+  margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 50vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+  background-color: greenyellow;
+  border: 5px solid #343a40;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #007bff;
+}
+
+Form {
+  margin-bottom: 20px;
+}
+
+Form .Button {
+  margin-bottom: 10px;
+}
+
+Button {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+Button:hover {
+  background-color: #bd2130;
+}
+
+Form.Control {
+  font-size: 18px;
+}
+
+.ListGroup {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.ListGroupItem {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FormCheck {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
 }
